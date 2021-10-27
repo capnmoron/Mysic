@@ -1,4 +1,3 @@
-console.log('Welcome to Spotify');
 let songIndex=1;
 let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
