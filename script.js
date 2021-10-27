@@ -19,8 +19,8 @@ let songs = [
     {songName: "Song 10", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
 ]
 songItems.forEach((element, i) => {
-    element.getElementsByTagName('img')[0].src = songs[i].coverPath;
-    element.getElementsByClassName('songName')[0].innerText = songs[i].songName;
+    element.getElementsByTagName('img').src = songs[i].coverPath;
+    element.getElementsByClassName('songName').innerText = songs[i].songName;
 });
 masterPlay.addEventListener('click', ()=>{
     if(audioElement.paused || audioElement.currentTime<=0){
